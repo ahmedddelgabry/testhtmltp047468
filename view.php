@@ -11,7 +11,7 @@ if(!$conn)
   //echo "Connection Success: connected!";
   
 $tsql= "SELECT * FROM [dbo].[restaurant]";
- $getResults= sqlsrv_query($conn, $tsql);
+ $getResults= sqlsrv_query($conn, $sql);
 
 if ($getResults == FALSE)
 {
